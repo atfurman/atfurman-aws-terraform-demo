@@ -1,7 +1,7 @@
 # Overview
 This stage is a placeholder for any number of precursor stages which might exist in a production system. These stages would be responsible for configuring the system and passing down information about the system to subsequent stages. 
 
-In this demo, the "bootstrap" stage creates an S3 bucket for storing terraform state to be used by the `tf-deploy` stage, provisions a least-privilege role to be used by the `tf-deploy` stage, and writes a providers file for that stage specifying the bucket as the backend.
+In this demo, the "bootstrap" stage creates an S3 bucket for storing terraform state to be used by the `tf-deploy` stage, provisions a role to be used by the `tf-deploy` stage, and writes a providers file for that stage specifying the bucket as the backend.
 
 This configuration is relevant to requirements such as FedRAMP where control needs to be maintained over the terraform state- storing the state outside of the "system boundary" heightens the risk of unintentional exposure and would generally be considered some form of external system interconnection.
 
