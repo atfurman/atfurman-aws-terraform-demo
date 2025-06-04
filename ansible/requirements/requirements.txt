@@ -1,3 +1,0 @@
-boto3>=1.38.27
-ansible>=11.6.0
-ansible-lint>=25.5.0

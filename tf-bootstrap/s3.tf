@@ -3,7 +3,6 @@ module "s3_tf_state" {
   source                           = "terraform-aws-modules/s3-bucket/aws"
   bucket                           = "${var.system_prefix}-${data.aws_caller_identity.account.id}-tf-state"
   force_destroy                    = false
-  acl                              = "private"
   object_ownership                 = "BucketOwnerEnforced"
   restrict_public_buckets          = true
   block_public_acls                = true
